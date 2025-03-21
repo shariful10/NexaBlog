@@ -53,6 +53,15 @@
       "author_name": "Mehedi Imun Anik",
       "blog_image": "https://startnearshoring.com/wp-content/uploads/2023/07/The_Growing_Importance_of_Cybersecurity.jpg",
       "total_likes": "950"
+    },
+    {
+      "id": "1017",
+      "title": "Redux",
+      "author_name": "Shariful",
+      "publish_date": "2025-03-21",
+      "total_likes": "30",
+      "blog_image": "https://www.insights.onegiantleap.com/content/images/2023/10/Content-Hub-Blog---The-rise-of-quantum-computing.png",
+      "description": "Discover the transformative impact of augmented reality (AR) on various industries, from gaming and education to healthcare and manufacturing. Uncover the latest AR technologies, groundbreaking applications, and the future possibilities of this immersive tech."
     }
   ]
 }
