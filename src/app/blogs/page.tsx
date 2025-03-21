@@ -4,7 +4,6 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "NexaBlog | Blogs",
-	description: "Explore all the latest blogs on quantum computing.",
 };
 
 const BlogsPage = async () => {
