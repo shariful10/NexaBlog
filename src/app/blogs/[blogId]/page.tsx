@@ -1,5 +1,5 @@
 import BlogDetailsCard from "@/components/ui/BlogDetailsCard";
-import { baseApi } from "@/config";
+import { apiUrl } from "@/config";
 import { TBlog } from "@/types";
 
 type TBlogId = {
@@ -7,7 +7,7 @@ type TBlogId = {
 };
 
 export const generateStaticParams = async () => {
-	const res = await fetch(`${baseApi}/blogs`);
+	const res = await fetch(`${apiUrl}/blogs`);
 	const blogs = await res.json();
 
 	return blogs.slice(0, 3).map((blog: TBlog) => ({
@@ -22,7 +22,7 @@ export async function generateMetadata({
 }) {
 	const { blogId } = await params;
 
-	const res = await fetch(`${baseApi}/blogs/${blogId}`);
+	const res = await fetch(`${apiUrl}/blogs/${blogId}`);
 	const blog = await res.json();
 
 	return {
@@ -34,7 +34,7 @@ export async function generateMetadata({
 const BlogDetailsPage = async ({ params }: { params: Promise<TBlogId> }) => {
 	const { blogId } = await params;
 
-	const res = await fetch(`${baseApi}/blogs/${blogId}`);
+	const res = await fetch(`${apiUrl}/blogs/${blogId}`);
 	const blog = await res.json();
 
 	return (

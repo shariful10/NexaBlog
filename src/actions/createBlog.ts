@@ -1,12 +1,12 @@
 "use server";
 
-import { baseApi } from "@/config";
+import { apiUrl } from "@/config";
 import { redirect } from "next/navigation";
 
 export const createBlog = async (data: FormData) => {
 	const blogData = Object.fromEntries(data.entries());
 
-	const res = await fetch(`${baseApi}/blogs`, {
+	const res = await fetch(`${apiUrl}/blogs`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
